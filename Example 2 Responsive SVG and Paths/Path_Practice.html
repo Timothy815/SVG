@@ -13,8 +13,19 @@
 <!--Practicing path writing-->
 		
 		
-	<svg id="practice_paths" viewbox(0 0 150 500)>
-		
+	<svg id="practice_paths" viewbox(0 0 100% 300px)>
+		<g stroke="black" fill="white">
+<!--	Line Path-->
+		<path d="M50 50 L 100 10 L 150 50 V 120 H 50 V 50z"/>
+<!--	Cubic Bezier Path-->
+		<path d="M200 50 C 200 100, 300 100, 300 50 S 200 0, 200 50z"/>
+<!--	Quadratic Bezier Path-->
+		<path d="M350 50 Q 400 10 , 450 50 Q 400 150, 350 50z"/>	
+<!--	Arcs paths-->
+		<path d="M500 50 H 550 A 26 40 0 0 0 600 50 H 650 V 40 H 600 A 26 40 0 0 0 550 40 H 500 V 50z "/>
+<!--	Reflecting Bezier Path-->
+			<path d="M200 200 C 200 250, 300 250, 300 200 S 400 150, 400 200"/>
+		</g>
 	</svg>					
 		
 		

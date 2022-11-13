@@ -5,3 +5,9 @@ It’s nice and easy to have CSS control all of the sizing and keep it in one pl
 Drasner, Sarah. SVG Animations: From Common UX Implementations to Complex Responsive Animation (p. 6). O'Reilly Media. Kindle Edition. 
 
 
+External Links
+Code Pen SVG manipulate paths demo - Pretty cool
+https://codepen.io/netsi1964/pen/pJzWoz 
+
+Javascript SVG Drawing Resource
+https://d3js.org/

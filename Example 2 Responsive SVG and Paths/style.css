@@ -21,9 +21,16 @@ body{
 	border: 1px solid black;
 }
 
-#practice_paths{
-	width: 75%;
-	height: auto;
+#practice_paths  {
+	
+	width: 100%;
+	height: 300px;
+	
 	background-color: #ffCCCC55;
 	border: 1px solid black;
+}
+#practice_paths g path{
+	stroke-width: 5px;
+	stroke-offset: -50px;
+	fill: #AA3388;
 }

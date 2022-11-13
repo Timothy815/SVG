@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#Square_hole{
+			display:  block;
+			position: absolute;
+			height: 500px;
+			width:auto;
+			fill: #000FFc;
+			transform: translate(-20px, -40px);
+			z-index: 2;
+		}
+		p{
+			background-color: red;
+			position: absolute;
+			display: block;
+			transform: translate(-70px, 50px);
+			animation: slide 3s ease-in-out infinite;
+			z-index: 0;
+		}
+		@keyframes slide{
+			0%{
+				transform: translate(-70px, 50px);
+				
+			}
+			50%{
+				transform: translate(220px, 50px);
+			}
+			100%{
+				transform: translate(-70px, 50px);
+
+			}
+			
+		}
+	</style>
+		
+	</head>
+	<body>
+		<p>Hello World</p>
+		<svg  id="Square_hole" viewBox="0 0 100% 300px">
+				<g>
+					<path d="M231.584 41.474H84.982v146.602h146.602V41.474Zm-73.301 38.148c19.401 0 35.152 15.752 35.152 35.153 0 19.401-15.751 35.153-35.152 35.153-19.402 0-35.153-15.752-35.153-35.153 0-19.401 15.751-35.153 35.153-35.153Z"/>
+				</g>
+		</svg>
+		<script src="" charset="utf-8"></script>
+	</body>
+</html>

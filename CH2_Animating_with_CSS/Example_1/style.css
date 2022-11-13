@@ -1,0 +1,53 @@
+body{
+	margin:0;
+	width:100%;
+	height: auto;
+	background: transparent;
+	
+	--stripe_color: #DDDDDD;
+	background-image: 
+		linear-gradient(var(--stripe_color) 0 2px, transparent 0px),
+		linear-gradient(90deg,var(--stripe_color) 0 2px, transparent 0px),
+		linear-gradient(var(--stripe_color) 0 1px, transparent 0px),
+		linear-gradient(90deg,var(--stripe_color) 0 1px, transparent 0px);
+	background-size:50px 50px, 50px 50px,
+					10px 10px, 10px 10px;
+}
+
+@keyframes slide { 
+	0% {
+		fill: blue;
+		transform: translateX(0px)rotate(0deg);
+	}50%{
+		fill:red;
+		transform: translateX(90%)rotate(360deg);
+	}100%{
+		fill:blue;
+		transform: translateX(0px) rotate(0deg);
+	}
+}
+svg{
+	width: 100%;
+	height:200px;
+	
+	background-color: #ffCCCC55;
+}
+#ball{
+	cx: 55;
+	cy: 100;
+	transform-origin: 55px 100px;
+	fill: blue;
+	
+	
+	animation: slide alternate ease-in-out 5s 0.2s 1;
+}
+
+
+#ball2{
+	cx: 100;
+	cy: 100;
+	
+	fill: black;
+
+	
+}

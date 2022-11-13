@@ -1,0 +1,10 @@
+
+Demonstration from Book for animating with CSS
+https://codepen.io/sdras/pen/JYKjMO/c00ac22c90b9232a7c5631a8158b48c1
+
+
+Jank Free
+http://jankfree.org/ 
+
+High Performance Animations
+https://web.dev/animations-guide/

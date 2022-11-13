@@ -9,30 +9,34 @@
 		#Square_hole{
 			display:  block;
 			position: absolute;
-			height: 500px;
+			height: 200px;
 			width:auto;
 			fill: #000FFc;
 			transform: translate(-20px, -40px);
 			z-index: 2;
 		}
-		p{
+		#Square_hole + p{
 			background-color: red;
 			position: absolute;
+			transform: translate(-10px, 50px);
 			display: block;
-			transform: translate(-70px, 50px);
-			animation: slide 3s ease-in-out infinite;
 			z-index: 0;
+		}
+		
+		#Square_hole:hover + p{
+			animation: slide 1s ease-in-out 1;
+		
 		}
 		@keyframes slide{
 			0%{
-				transform: translate(-70px, 50px);
+				transform: translate(-10px, 50px);
 				
 			}
 			50%{
-				transform: translate(220px, 50px);
+				transform: translate(320px, 50px);
 			}
 			100%{
-				transform: translate(-70px, 50px);
+				transform: translate(-10px, 50px);
 
 			}
 			
@@ -41,12 +45,13 @@
 		
 	</head>
 	<body>
-		<p>Hello World</p>
-		<svg  id="Square_hole" viewBox="0 0 100% 300px">
+		
+		<svg  id="Square_hole" viewBox="0 0 100px 100px">
 				<g>
 					<path d="M231.584 41.474H84.982v146.602h146.602V41.474Zm-73.301 38.148c19.401 0 35.152 15.752 35.152 35.153 0 19.401-15.751 35.153-35.152 35.153-19.402 0-35.153-15.752-35.153-35.153 0-19.401 15.751-35.153 35.153-35.153Z"/>
 				</g>
 		</svg>
+		<p>Hello World</p>
 		<script src="" charset="utf-8"></script>
 	</body>
 </html>

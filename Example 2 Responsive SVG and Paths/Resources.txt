@@ -1,0 +1,10 @@
+Chapter 1 Page 4 (Drasner, Sarah. SVG Animations: From Common UX Implementations to Complex Responsive Animation (p. 4).)
+
+Sara Soueidan has an extremely intuitive and helpful interactive demo for you to play with in order to see this system in action at: https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html 
+
+Amelia Bellamy-Royds has a great resource on CSS-Tricks with tons of cool demos at: 
+	https://css-tricks.com/scale-svg/
+
+Joni Trythall has a really nice resource about the viewBox and viewport as well at:
+	https://jonitrythall.com/svg-viewbox-and-viewport 
+

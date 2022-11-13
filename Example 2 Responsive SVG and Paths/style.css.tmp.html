@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-		
-	</head>
-	<body>
-		
-<!--SVG DOM Syntax Chapter 1 Example 1 Figure 1-1 Page 1 Location 154-->
-	
-		<svg id="example_1"x="0px" y="0px" width="450px" height="150px" viewBox="0 0 450 150">
-			
-			 <rect x="10" y="10" fill="red" stroke="none" width="100" height="100"/>
-			
-			 <circle fill="white" stroke="black" cx="170" cy="60" r="50"/>
-			
-			 <polygon fill="white" stroke="black" points="280,15 295,45 329,50 304,72
-	310,104 280,89 249,104 255,72 231,49 264,45"/>
-			
-			 <line fill="none" stroke="black" x1="410" y1="100" x2="440" y2="10"/>
-			
-			 <line fill="none" stroke="black" x1="360" y1="10" x2="360" y2="100"/>
-			
-		</svg>
-		
+<style>
+body{
+	margin:0;
+	width:100%;
+	height: auto;
+	background: transparent;
 
-		
-		
-		
-		<script src="script.js" charset="utf-8"></script>
-	</body>
-</html>
+	--stripe_color: #DDDDDD;
+	background-image: 
+		linear-gradient(var(--stripe_color) 0 2px, transparent 0px),
+		linear-gradient(90deg,var(--stripe_color) 0 2px, transparent 0px),
+		linear-gradient(var(--stripe_color) 0 1px, transparent 0px),
+		linear-gradient(90deg,var(--stripe_color) 0 1px, transparent 0px);
+	background-size:50px 50px, 50px 50px,
+					10px 10px, 10px 10px;
+}
+
+#practice{
+	width: 100%;
+	height: auto;
+	background-color: #ffCCCC55;
+	border: 1px solid black;
+}
+</style>

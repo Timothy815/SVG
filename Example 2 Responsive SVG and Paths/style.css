@@ -14,8 +14,16 @@ body{
 					10px 10px, 10px 10px;
 }
 
-#example_1{
-	
+#example_2{
+	width: 75%;
+	height: auto;
+	background-color: #ffCCCC55;
+	border: 1px solid black;
+}
+
+#practice_paths{
+	width: 75%;
+	height: auto;
 	background-color: #ffCCCC55;
 	border: 1px solid black;
 }

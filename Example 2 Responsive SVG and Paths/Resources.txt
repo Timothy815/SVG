@@ -1,10 +1,7 @@
-Chapter 1 Page 4 (Drasner, Sarah. SVG Animations: From Common UX Implementations to Complex Responsive Animation (p. 4).)
+Chapter 1 Page 5-6 (Drasner, Sarah. SVG Animations: From Common UX Implementations to Complex Responsive Animation (p. 4).)
 
-Sara Soueidan has an extremely intuitive and helpful interactive demo for you to play with in order to see this system in action at: https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html 
+It’s nice and easy to have CSS control all of the sizing and keep it in one place, but I sometimes leave the width and height in if I’m worried about the CSS not loading properly. If there’s no fallback for the width and height inline, the SVG will scale to the available space, which can look pretty ostentatious. For that reason, you may consider writing these values inline as well. The CSS will override the presentational attributes (but not inline styles).
 
-Amelia Bellamy-Royds has a great resource on CSS-Tricks with tons of cool demos at: 
-	https://css-tricks.com/scale-svg/
+Drasner, Sarah. SVG Animations: From Common UX Implementations to Complex Responsive Animation (p. 6). O'Reilly Media. Kindle Edition. 
 
-Joni Trythall has a really nice resource about the viewBox and viewport as well at:
-	https://jonitrythall.com/svg-viewbox-and-viewport 
 

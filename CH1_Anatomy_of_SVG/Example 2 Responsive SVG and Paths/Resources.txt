@@ -11,3 +11,6 @@ https://codepen.io/netsi1964/pen/pJzWoz
 
 Javascript SVG Drawing Resource
 https://d3js.org/
+
+SVGOMG - Clean up SVG files to make them easier to work with in a document.
+https://jakearchibald.github.io/svgomg/ 

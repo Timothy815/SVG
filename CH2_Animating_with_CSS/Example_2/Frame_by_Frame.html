@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+			.container{
+				overflow: hidden;
+				width: 180px;
+				height: 255px;
+				
+			}
+			.dopey{
+				position: relative;
+				left:-5px;
+				width: 200px;
+				height:3046px;
+				top:-15px;
+				background: url("Frame_Sprite2.svg");
+				animation: seeDopey 1s steps(11) infinite ;
+			}
+			@keyframes seeDopey{
+				100%{
+					background-position: 0 -3046px;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+		<div class="dopey"></div>
+		</div>
+	<script src="" charset="utf-8"></script>
+	</body>
+</html>

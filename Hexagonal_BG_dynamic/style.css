@@ -10,15 +10,17 @@ body{
 
 #group{
 	transform: scale(25%);
+	
 }
-
-
 
 .hexback{
 	fill: #222222;
-	stroke:#000;
+	stroke:#000000;
 	stroke-width:3px;
+	transition: 0.5s;
+	
 }
+
 
 
 .hexinner{
@@ -27,13 +29,14 @@ body{
 	stroke-width:1px;
 }
 
+
 .hexhighlight{
 	fill:#33333388;
 	stroke: #000;
 	
 	opacity: 0.0;
 	stroke-width:0px;
-	transition: 5.0s ease-in-out;
+	transition: 3.0s ease-in;
 }
 .hexhighlight:hover{
 	opacity: 0.9;

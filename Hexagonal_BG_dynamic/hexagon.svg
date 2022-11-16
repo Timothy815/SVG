@@ -1,0 +1,15 @@
+<svg xml:space="preserve" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 291 252">
+  <g id="hexagon" class="hex">
+    <g transform="translate(-3.032 -24)">
+      <g id="back" class="hexback">
+        <path fill="#c2c2c2" stroke="#000" stroke-width="2.0062982" d="m4.031 150 72.17-125.001h144.337l72.17 125-72.17 125.002H76.2L4.031 150Z"/>
+      </g>
+      <g id="inner" class="hexinner">
+        <path fill="#9d9d9d" stroke="#000" stroke-width="1.9936630999999998" d="M8.952 150 78.66 29.26h139.417L287.786 150l-69.709 120.739H78.66L8.952 149.999Z"/>
+      </g>
+      <g id="highlight" class="hexhighlight>
+        <path fill="#9d9d9d" stroke="#000" stroke-width="1.9936630999999998" d="M8.952 150 78.66 29.26h139.417L287.786 150l-69.709 120.739H78.66L8.952 149.999Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

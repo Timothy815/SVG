@@ -1,0 +1,126 @@
+
+svg{
+	
+	background: #FFF;
+	width: 300px;
+	height: auto;
+}
+.Owl{
+	fill: #000;
+/*	stroke: #FFF;*/
+/*	stroke-width: 10px;*/
+	
+}
+
+.Backing{
+	fill:#fff;
+	visibility: hidden;
+	
+}
+
+@keyframes rotateRay{
+	0%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,25,1) rotate(0deg);
+
+	}100%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,25,1) rotate(360deg);
+	}
+}
+.Rays{
+/*	visibility: hidden;*/
+	fill: #747394;
+	transform-origin: 50% 50%;
+	transform:matrix(1,0,0,1,25,1) ;
+	animation:rotateRay 220s linear infinite; 
+}
+
+@keyframes rotateGear{
+	0%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,309,426) rotate(0deg);
+		
+	}100%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,309,426) rotate(-360deg);
+	}
+}
+
+.Gear{
+	
+	fill:#463E43;
+	transform-box: fill-box;
+	transform:matrix(1,0,0,1,309,426) rotate(0deg);
+	transform-origin: 50% 50%;
+	animation: rotateGear 120s linear infinite;
+	
+}
+@keyframes lookAround{
+	40%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,-2.76579,21.2512) translate(0px, -3px);
+	}60%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,-2.76579,21.2512) translate(13px, -3px);
+	}80%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,-2.76579,21.2512) translate(-13px, -3px);
+	}100%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform:matrix(1,0,0,1,-2.76579,21.2512) translate(0px, -3px);
+	}
+	
+}
+
+.Eyes{
+	fill: #FFF;
+	transform:matrix(1,0,0,1,-2.76579,21.2512) translate(0px, -3px);
+	animation: lookAround 5s linear infinite;
+	
+}
+@keyframes raiseBrow{
+	50%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform: translateY(-25px);
+		
+	}100%{
+		transform-box: fill-box;
+		transform-origin: 50% 50%;
+		transform: translateY(-0px);
+		
+	}
+}
+
+.Lids{
+	
+	fill:#FFB700;;#69BAC9;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	transform: translateY(-0px);
+	animation: raiseBrow 4s infinite;
+}
+
+
+.Goggles{
+	fill: #69BAC9;
+}
+
+.Bulb{
+/*	visibility: hidden;*/
+	fill:#FFB700;
+}
+
+.Infinite-Owl{
+	visibility: hidden;
+	fill:#463E43;
+}

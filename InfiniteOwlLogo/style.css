@@ -32,7 +32,7 @@ svg{
 }
 .Rays{
 /*	visibility: hidden;*/
-	fill: #747394;
+	fill: #463E43;;#747394;
 	transform-origin: 50% 50%;
 	transform:matrix(1,0,0,1,25,1) ;
 	animation:rotateRay 220s linear infinite; 
@@ -91,12 +91,12 @@ svg{
 	50%{
 		transform-box: fill-box;
 		transform-origin: 50% 50%;
-		transform: translateY(-25px);
+		transform: translateX(-25px);
 		
 	}100%{
 		transform-box: fill-box;
 		transform-origin: 50% 50%;
-		transform: translateY(-0px);
+		transform: translateX(-0px);
 		
 	}
 }
@@ -106,13 +106,13 @@ svg{
 	fill:#FFB700;;#69BAC9;
 	transform-box: fill-box;
 	transform-origin: 50% 50%;
-	transform: translateY(-0px);
-	animation: raiseBrow 4s infinite;
+	transform: translateY(-10px);
+	
 }
 
 
 .Goggles{
-	fill: #69BAC9;
+	fill: #FFFFFF;:#69BAC9;
 }
 
 .Bulb{

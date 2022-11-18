@@ -18,8 +18,8 @@ body{
 .hexback{
 	fill: #222222;
 	stroke:#000;
-	stroke:#000000;
-	stroke-width:3px;
+
+	stroke-width:15px;
 	transition: 0.5s;
 	
 }

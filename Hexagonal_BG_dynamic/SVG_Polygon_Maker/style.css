@@ -1,0 +1,29 @@
+body{
+	font-family: sans-serif;
+}
+.formGui{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+label, input{
+	margin: 5px;
+	padding: 5px;
+	
+}
+svg{
+	width: 100%;
+	height: 500px;
+	background-color: #EEF;
+}
+
+.tinput{
+	font-family: sans-serif;
+}
+
+.txtAreas{
+	margin: 5px;
+	padding: 5px;
+	width: 400px;
+	height: 100px;
+}

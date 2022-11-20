@@ -18,15 +18,17 @@
             stroke-width: 1px;
         
         }
+        #tooth2{
+            transform-box: fill-box;
+            transform-origin: center;
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body>
    <svg width="200px" height="200px" viewBox="-10 -10 200 200">
-    <circle cx="25" cy="25" r="25" style="stroke:blue;fill:none;"/>
-    <rect x="100" y="5" width="30" height="80" style="stroke:blue;fill:none;"/>    
-
-   <svg x="100px" y="5px" width="30px" height="80px" viewBox="0 0 50 50" preserveAspectRatio="xMaxYMax meet">
-    <circle cx="25" cy="25" r="25" style="stroke:blue;fill:#f55;"/>
+    <polygon id="tooth" points="50,50, 60,60 70,50 80,60 90,50 90,30 50,30 50,50z"/>
+    <use id="tooth2" xlink:href="#tooth" x="50" y="0"/>
 </svg>
 </body>
 </html>

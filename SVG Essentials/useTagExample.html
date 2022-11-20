@@ -7,28 +7,41 @@
     <title>Document</title>
     <style>
         polygon{
-            fill: #390a46;
+            
             stroke: black;
             stroke-width: 1px;
         }
         polyline{
-           
             fill: transparent;
             stroke: black;
             stroke-width: 1px;
-        
+            
         }
         #tooth2{
             transform-box: fill-box;
+            fill: gold;
             transform-origin: center;
             transform: rotate(180deg);
+        }
+        #tooth1{
+            transform-box: fill-box;
+            transform-origin: center;
+            fill: aqua;
+            transform: rotate(0deg);
         }
     </style>
 </head>
 <body>
-   <svg width="200px" height="200px" viewBox="-10 -10 200 200">
-    <polygon id="tooth" points="50,50, 60,60 70,50 80,60 90,50 90,30 50,30 50,50z"/>
-    <use id="tooth2" xlink:href="#tooth" x="50" y="0"/>
+
+    
+   <!DOCTYPE xmlns/svg>
+   
+   <svg  xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="-10 -10 200 200">
+    <defs id="defs1">
+        <polygon id="tooth" points="50,50, 60,60 70,50 80,60 90,50 90,30 50,30 50,50z"/>
+    </defs>
+    <use id="tooth1" href="#tooth"  x="0" y="-30"/>
+    <use id="tooth2"  href="#tooth"  x="0" y="-10"/>
 </svg>
 </body>
 </html>

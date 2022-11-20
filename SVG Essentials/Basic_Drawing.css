@@ -1,0 +1,45 @@
+svg{
+	background: gray;
+	shape-rendering: geometricPrecision;
+}
+
+line{
+	stroke: black;
+	stroke-weight: 2px;
+}
+
+circle{
+	fill:purple;
+}
+
+polygon{
+	fill: gold;
+	stroke: black;
+	stroke-width: 10px;
+	stroke-opacity: 0.5;
+	stroke-dasharray:300;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+rect{
+	fill: cyan;
+	rx:50;
+	ry:50;
+}
+
+ellipse{
+	fill: linear-gradient(45deg, orange, blue);
+}
+
+polyline{
+    fill: none;
+	stroke: black;
+	stroke-width: 10px;
+	stroke-opacity: 0.5;
+
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 5;
+}

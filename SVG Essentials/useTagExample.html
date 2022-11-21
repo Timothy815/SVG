@@ -85,7 +85,7 @@
         path{
             stroke-linejoin: round;
             stroke: black;
-            stroke-width: 5px;
+            stroke-width: 1px;
             stroke-linecap: round;
         }
     </style>
@@ -121,17 +121,41 @@
              fill="purple" stroke="red" stroke-width="2px" />
         
         <path d="M -20 0,40 0, 40 60, -20 60z M-5 15 25, 15, 25 45 ,-5 45z"
-             fill="red" stroke="" stroke-width="" fill-rule="evenodd" />
+             fill="red" stroke=""  fill-rule="evenodd" />
        <defs>
         <marker id="mCircle"
             refX="5" refY="5"
             markerWidth="10"
             markerHeight="10"
-            <circle cx="5" cy="5" r="4" style="fill:black"/>
+           
+            >
+            <circle cx="5" cy="5" r="5" style="fill:black;stroke:none;"></circle>
         </marker>
+
+        <marker id="mArrow"
+            refX="0" refY="4"
+            markerWidth="10"
+            markerHeight="10"
+            orient="auto">
+            
+            <path d="M 0 0 4 4 0 8"
+                 fill="none" stroke="black"/>
+        </marker>
+
+        <marker id="mTriangle"
+        refX="5" refY="5"
+        markerWidth="10"
+        markerHeight="10"
+        orient="auto">
+        <path d="M 0 0 10 5 0 10 z"
+             fill="black" stroke="black"/>
+        </marker>
+
         </defs>
-        <path d="m 10 200 h 60 a 20 70 45 0 1 10 10 v 60"
-             fill="none" stroke="black" stroke-width="" />
+        <path d="M 10 200 h 60 a 20 70 45 0 1 10 10 v 60"
+             fill="none" stroke="black" style="marker-start:url(#mCircle);
+                                                marker-mid: url(#mArrow);
+                                                marker-end: url(#mTriangle)" />
     
 </svg>
 </body>

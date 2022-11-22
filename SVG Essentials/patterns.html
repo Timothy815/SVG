@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            svg{
+                background: #FFDDDD55;
+                width:100%;
+                height: 500px
+            }
+          
+         #checker {
+            transform: scale(0.5);
+             
+         }
+       
+         .light{
+            fill:gray
+         }
+         .dark{
+            fill: white;
+         }
+         #gradient{
+            x1:0%;
+            y1: 0%;
+            x2: 100%;
+            y2:100%;
+         }
+         #s1{
+            stop-color: aqua;
+         }
+         #s2{
+            stop-color:blueviolet;
+         }
+         #skewed{
+            transform: scale(0.5) skewY(15deg);
+         }
+         #cheverons{
+            transform: scale(0.4);
+           
+         }
+         #bg{
+            fill:rgb(82, 25, 4);
+         }
+         .chev{
+            fill:rgb(10, 101, 124);
+         }
+        </style>
+    </head>
+    <body>
+      <svg viewBox="0 0 100% 500">
+        <defs>
+            
+ 
+        <pattern id="checker" x="-1" y="-1" width="40" height="40"
+            patternUnits="userSpaceOnUse">
+          <g >
+        <path class="dark" d="M 0 0 l 20,0 0,20 -20,0z"
+             fill="red" stroke="none" stroke-width="1px" />
+        <path class="light" d="M 20 0 l 20,0 0,20 -20,0z"
+             fill="white" stroke="none" stroke-width="1px" />
+        <path class="light" d="M 0 20 l 20,0 0,20 -20,0z"
+             fill="white" stroke="none" stroke-width="1px" />
+        <path class="dark" d="M 20 20 l 20,0 0,20 -20,0z"
+             fill="red" stroke="none" stroke-width="1px" />
+             </g>
+    </pattern>
+
+    <pattern id="skewed" 
+       patternTransform="skewY(15)"
+       xlink:href="#checker">
+        
+    </pattern>
+</defs>
+    <rect x="20" y="20" width="100" height="100" style="fill:url(#checker)"/>
+    <rect x="135" y="20" width="70" height="80" style="fill:url(#skewed)"/>     
+    <rect x="220" y="20" width="150" height="130" style="fill:url(#checker)"/>
+    <defs>
+    <linearGradient id="gradient"x1="0%" y1="50%" x2="100%" y2="0%"
+    spreadMethod="pad">
+        <stop id="s1"offset="0%" />
+        <stop id="s2"offset="100%"/>
+    </linearGradient>
+</defs>
+    <rect x="20" y="200" width="100" height="100" style="fill: url(#gradient);"/>
+
+<defs>
+    <radialGradient id="radial"
+    cx="50%" cy="50%"fx="50%" fy="50%" r="100%"
+    spreadMethod="pad">
+    <stop offset="0" stop-color="red" stop-opacity="100%"/>
+    <stop offset="50%" stop-color="blue" stop-opacity="100%"/>
+    <stop offset="100%" stop-color="orange" stop-opacity="100%"/>
+    </radialGradient>
+</defs>
+ 
+<rect x="150" y="200" width="100" height="100" style="fill:url(#gradient);stroke: url(#radial); stroke-width: 15px;"/>
+
+<defs>
+<pattern id="cheverons" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+<g> 
+    <rect id="bg" x="0" y="0" width="50" height="50" fill="#333333"/>
+    <path class="chev" d="M 0 0 l 0 25 25 0 25 0 0 -25 -25 25z"
+     fill="#444" stroke="none"/>
+    <path class="chev" d="M 0 24.5 l 25 25 25 -25 0 0 -25 0 -25 0z"
+     fill="#444" stroke="none"/>
+</g>
+</pattern>
+</defs>
+<rect x="20" y="340" width="100" height="100" fill="url(#cheverons)"/>
+
+
+
+</svg>
+
+        <script src="patterns.js"></script>
+      
+    </body>
+</html>

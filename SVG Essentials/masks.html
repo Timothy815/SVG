@@ -8,17 +8,18 @@
     </head>
     <body>
 
-        <svg width="350" height="200" viewBox="0 0 350 200"  xmlns="http://www.w3.org/2000/svg"
+    <svg viewBox="0 0 100% 100%" id="clipped"  xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <clipPath id="polyClip">
                 <polygon id="path" points="0,0 10,0 30,50 10,100 0,100" style="fill:black; stroke:black;"/>
            <text x="135" y="250" font-family="impact"font-size="24pt" >Hello World</text>
             </clipPath>
-
+            </defs>
     </svg>
+    <img id="me1" src="me.jpg" alt="me" style="clip-path: url(#polyClip);">
 
-    <svg viewBox="-10 -10 120 120">
+    <svg id="clipped2" viewBox="0 0 100% 100%">
         <mask id="myMask">
           <!-- Everything under a white pixel will be visible -->
           <rect x="0" y="0" width="100" height="100" fill="white" />
@@ -36,7 +37,7 @@
       </svg>
     
 
-        <img id="me1" src="me.jpg" alt="me" style="clip-path: url(#polyClip);">
+
         <script src="masks.js"></script>
     </body>
 </html>

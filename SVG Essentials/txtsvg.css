@@ -1,0 +1,34 @@
+svg{
+    width:100%;
+    height:400px;
+    
+}
+text{
+    font-family: "Roboto Mono";
+    font-size: 2.5em;
+    font-weight: 4000;
+     fill:purple;
+     stroke: black;
+     stroke-width: 2.1;
+     letter-spacing: 0.1em;
+     word-spacing: 0.1em;
+     text-anchor: start;
+     
+     writing-mode: horizontal-tb;
+}
+#bold{
+    display: block;
+    font-weight: 900;
+    text-decoration:line-through;
+    
+}
+
+#curvepath{
+    transform: translate(0,200px);
+}
+
+#paths{
+    font-size: 1.0em;
+    stroke: none;
+    letter-spacing: -1px;
+}
